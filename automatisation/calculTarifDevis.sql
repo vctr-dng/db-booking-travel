@@ -7,6 +7,8 @@ BEGIN
 
     DECLARE IDdevis INT;
 
+    CALL rechercheDevis(NOM, PRENOM, IDcircuit, IDperiode, IDdevis);
+
     /*
     On récupère le tarif proposé lors du devis par son attribut associé
     */
