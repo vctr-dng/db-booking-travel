@@ -5,9 +5,9 @@
   Client 2 a 1 circuit
    Client 3 a 2 circuits différents */
 
-INSERT INTO `agencevoyage`.`client` (`nom`, `prenom`, `adresse`, `ville`, `tel`, `mail`) VALUES ('Paul', 'Léa', 'Rue de la mootet', 'Pau', '0787061078', 'Martin@gmail.com');
-INSERT INTO `agencevoyage`.`client` (`nom`, `prenom`, `adresse`, `ville`, `tel`, `mail`) VALUES ('Julia', 'Berinal', 'Avenue du mont', 'Dax', '0686306840', 'julia.Berinal@laposte.net');
-INSERT INTO `agencevoyage`.`client` (`nom`, `prenom`, `adresse`, `ville`, `tel`, `mail`) VALUES ('Paula', 'Martin', 'route du juren', 'Bayonne', '0686361057', 'Gege.paula@gouv.fr');
+INSERT INTO `agencevoyage`.`client` (`nom`, `prenom`, `adresse`, `ville`, `tel`, `mail`) VALUES ('Paul', 'Léa', 'Rue de la mootet', 'Guimguamp', '0787061078', 'Martin@gmail.com');
+INSERT INTO `agencevoyage`.`client` (`nom`, `prenom`, `adresse`, `ville`, `tel`, `mail`) VALUES ('Julia', 'Berinal', 'Avenue du mont', 'Londres', '0686306840', 'julia.Berinal@laposte.net');
+INSERT INTO `agencevoyage`.`client` (`nom`, `prenom`, `adresse`, `ville`, `tel`, `mail`) VALUES ('Paula', 'Martin', 'route du juren', 'Trebeurden', '0686361057', 'Gege.paula@gouv.fr');
 
 INSERT INTO `agencevoyage`.`periode` (`date_depart`,`date_arrivee`) VALUES ('2022-12-30','2023-01-02');
 INSERT INTO `agencevoyage`.`periode` (`date_depart`,`date_arrivee`) VALUES ('2022-03-24','2022-03-30');
