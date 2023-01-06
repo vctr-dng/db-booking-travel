@@ -9,7 +9,7 @@ INSERT INTO `agencevoyage`.`periode` (`date_depart`,`date_arrivee`) VALUES ('202
 
 INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('1', 'True', 'True','True' '2800');
 INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('2', 'True', 'True','True' '1500');
-/*lire le tarif de la réservation */
+/*comparer les tarifs de réservation et de circuit */
 INSERT INTO `agencevoyage`.`circuit` (`id_periode`, `nb_places_totales`, `nb_places_reservees`, `tarif`, `descriptif`, `libelle`) VALUES ('1', '12', '1', '2500', 'Circuit en Italie', 'Venez decouvrir l italie');
 INSERT INTO `agencevoyage`.`circuit` (`id_periode`, `nb_places_totales`, `nb_places_reservees`, `tarif`, `descriptif`, `libelle`) VALUES ('2', '5', '1', '1750', 'Circuit en Espagne', 'Vene zdécouvrir l espagne');
 
