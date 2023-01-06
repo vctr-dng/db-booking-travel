@@ -1,5 +1,5 @@
 CREATE TRIGGER `agencevoyage`.`ajoutReservation`
-AFTER INSERT ON `reservation`
+BEFORE INSERT ON `reservation`
 FOR EACH ROW
 BEGIN
     DECLARE nbrReservation INT;
@@ -13,7 +13,7 @@ BEGIN
 
     CALL nombreReservationCircuit(IDclient, IDcircuit, nbrReservation);
 
-    IF (@nbrReservation >= 1) THEN
+    IF (nbrReservation >= 1) THEN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'Règle 7 non respectée';
     END IF;
