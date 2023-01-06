@@ -5,14 +5,12 @@ BEGIN
     On récupère le tarif établi lors du devis et le tarif actuel
     On compare les 2 tarifs pour ne garder que le plus faible
     */
-    SET @tarifDevis;
-	SET @tarifActuel;
+    DECLARE tarifDevis DECIMAL(8, 2);
+	DECLARE tarifActuel DECIMAL(8, 2);
 
-    CALL calculTarifDevis(NOM, PRENOM, IDcircuit, IDperiode, @tarifActuel)
-    CALL calculTarifActuel(IDperiode, IDcircuit, @tarifActuel)
+    CALL calculTarifDevis(NOM, PRENOM, IDcircuit, IDperiode, tarifActuel);
+    CALL calculTarifActuel(IDperiode, IDcircuit, tarifActuel);
 
-    SET @tarifMinimal:=LEAST(@tarifDevis, @tarifActuel)
-
-    SELECT &tarifMinimal INTO tarifAvantageux;
+    SELECT LEAST(@tarifDevis, tarifActuel) INTO tarifAvantageux;
     
 END

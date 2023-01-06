@@ -1,4 +1,4 @@
-CREATE PROCEDURE 'nombreReservationCircuit'(IN IDclient INT, IN IDcircuit INT, OUT nbrReservation INT)
+CREATE PROCEDURE `nombreReservationCircuit`(IN IDclient INT, IN IDcircuit INT, OUT nbrReservation INT)
 BEGIN
 
     SELECT COUNT(reservation.id_reservation)

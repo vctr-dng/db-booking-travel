@@ -5,9 +5,9 @@ BEGIN
     On récupère le devis (la clé primaire la référencant) à partir des informations données
     */
 
-    set @IDdevis;
+    DECLARE IDdevis INT;
 
-    CALL calculTarifDevis(NOM, PRENOM, IDcircuit, IDperiode, @IDdevis)
+    CALL calculTarifDevis(NOM, PRENOM, IDcircuit, IDperiode, IDdevis);
 
     /*
     On récupère le tarif proposé lors du devis par son attribut associé

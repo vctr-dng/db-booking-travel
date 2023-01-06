@@ -6,8 +6,7 @@ BEGIN
     client.id_client = devis.id_client AND
     client.nom = NOM AND
     client.prenom = PRENOM AND
-
-    circuit.id_circuit = devis.id_circuit
+    circuit.id_circuit = devis.id_circuit AND
     circuit.id_circuit = IDcircuit AND
     circuit.id_periode = IDperiode
 

@@ -1,4 +1,4 @@
-CREATE PROCEDURE 'reservationPossible'(IN IDcircuit INT, IN IDperiode INT, OUT test TINYINT)
+CREATE PROCEDURE `reservationPossible`(IN IDcircuit INT, IN IDperiode INT, OUT test TINYINT)
 BEGIN
 
     SELECT FALSE INTO test; /* Présomption d'impossibilité de réserver */
@@ -7,7 +7,7 @@ BEGIN
         FROM circuitImminent
         WHERE circuitImminent.id_circuit = IDcircuit
     ) = 0 AND
-    (SELECT DATE_SUB(periode.date_depart, NOW()) /* Vérification si le la période indiquée a une date de départ postérieur à aujourd'hui */ 
+    (SELECT TIMEDIFF(periode.date_depart, NOW()) /* Vérification si le la période indiquée a une date de départ postérieur à aujourd'hui */ 
     FROM periode
     WHERE periode.id_periode = IDperiode
     ) > 0
