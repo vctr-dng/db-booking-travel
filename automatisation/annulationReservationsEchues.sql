@@ -1,12 +1,11 @@
 CREATE PROCEDURE `annulationReservationsEchues`()
 BEGIN
 
-    UPDATE reservation
-    SET reservation.effective = 0
+    UPDATE reservationEchue
+    SET reservationEchue.effective = 0
     WHERE
-    reservation.id_reservation IN (SELECT reservationEchue.id_reservation FROM reservationEchue) AND
-    reservation.effective = 0 AND
-    reservation.solde_verse = 0;
+    reservationEchue.effective = TRUE AND
+    reservationEchue.solde_verse = FALSE;
 
     /*
     UPDATE circuit
