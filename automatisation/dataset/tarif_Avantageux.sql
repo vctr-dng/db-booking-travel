@@ -23,3 +23,6 @@ INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_vers
 INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('2', 'True', 'True','True' '1500');
 
 /*comparer les tarifs de réservation et de circuit */
+
+/*tarif plus avantageux sur le circuit pour le client 1
+  tarif plus avantageux sur le devis pour le client 2*/
