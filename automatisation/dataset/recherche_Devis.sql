@@ -17,8 +17,8 @@ INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_deman
 
 
 /*Client1*/
-INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('1', 'True', 'True','True' '2750');
+INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('1', TRUE, TRUE,TRUE '2750');
 /*Client2*/
-INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('2', 'True', 'True','True' '1250');
+INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('2', TRUE, TRUE,TRUE '1250');
 
 /* rechercher les devis */

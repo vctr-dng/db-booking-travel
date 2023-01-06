@@ -18,9 +18,9 @@ INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_deman
 
 
 /*Client1*/
-INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('1', 'True', 'True','True' '2570');
+INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('1', TRUE, TRUE,TRUE '2570');
 /*Client2*/
-INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('2', 'True', 'True','True' '1505');
+INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`, `tarif_initial`, ) VALUES ('2', TRUE, TRUE,TRUE '1505');
 
 /*comparer les tarifs de réservation et de circuit */
 
