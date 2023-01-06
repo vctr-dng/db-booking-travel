@@ -1,10 +1,10 @@
 /*
-Cette vue doit être créée après la vue "circuitImminent" car elle (cette vue) en dépend
+Cette vue doit être créée après la vue "circuitimminent" car elle (cette vue) en dépend
 */
 
-CREATE VIEW reservationEchue AS
+CREATE VIEW reservationechue AS
 SELECT reservation.*
-FROM reservation, devis, circuitImminent
+FROM reservation, devis, circuitimminent
 WHERE
-circuitImminent.id_circuit = devis.id_circuit AND
+circuitimminent.id_circuit = devis.id_circuit AND
 devis.id_devis = reservation.id_devis;

@@ -1,4 +1,4 @@
-CREATE VIEW circuitImminent AS
+CREATE VIEW circuitimminent AS
 SELECT circuit.*
 FROM circuit, periode
 WHERE

@@ -12,5 +12,8 @@ INSERT INTO `agencevoyage`.`circuit` (`id_periode`, `nb_places_totales`, `nb_pla
 INSERT INTO `agencevoyage`.`circuit` (`id_periode`, `nb_places_totales`, `nb_places_reservees`, `tarif`, `descriptif`, `libelle`) VALUES ('3', '24', '0', '1475', 'Circuit en Ecosse', 'Venez visiter l Ecosse');
 
 INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`, `tarif_initial`) VALUES ( '1', '1', '1', '2022-12-28', '2500');/*reste moins de 6 mois*/
-INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`, `tarif_initial`) VALUES ( '2', '2', '1', '2022-01-26', '1800');/*supprimé trop vieux*/
+INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`, `tarif_initial`) VALUES ( '2', '2', '1', '2022-01-26', '1800');/*conservé car a donné lieu à une réservation*/
 INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`, `tarif_initial`) VALUES ( '3', '3', '2', '2022-02-27', '2000');/*supprimé trop vieux*/
+
+INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`) VALUES ('1', TRUE, TRUE, TRUE);
+INSERT INTO `agencevoyage`.`reservation` (`id_devis`, `effective`, `acompte_verse`, `solde_verse`) VALUES ('2', TRUE, TRUE, FALSE);

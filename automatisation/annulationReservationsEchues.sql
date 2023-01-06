@@ -1,11 +1,11 @@
 CREATE PROCEDURE `annulationReservationsEchues`()
 BEGIN
 
-    UPDATE reservationEchue
-    SET reservationEchue.effective = 0
+    UPDATE reservationechue
+    SET reservationechue.effective = 0
     WHERE
-    reservationEchue.effective = TRUE AND
-    reservationEchue.solde_verse = FALSE;
+    reservationechue.effective = TRUE AND
+    reservationechue.solde_verse = FALSE;
 
     /*
     UPDATE circuit
