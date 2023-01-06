@@ -1,14 +1,21 @@
 CREATE PROCEDURE `calculTarifDevis`(IN NOM VARCHAR(45), IN PRENOM VARCHAR(45), IN IDcircuit INT, IN IDperiode INT, OUT tarifDevis DECIMAL(8,2))
 BEGIN
-	SELECT reservation.tarif_initial
-    FROM resevation, client, circuit
+
+    /*
+    On récupère le devis (la clé primaire la référencant) à partir des informations données
+    */
+
+    set @IDdevis;
+
+    CALL calculTarifDevis(NOM, PRENOM, IDcircuit, IDperiode, @IDdevis)
+
+    /*
+    On récupère le tarif proposé lors du devis par son attribut associé
+    */
+	SELECT devis.tarif_initial
+    FROM devis
     WHERE
-    reservation.id_client = client.id_client AND
-    reservation.id_circuit = circuit.id_circuit AND
-
-    client.prenom = PRENOM AND
-    client.nom = NOM AND
-    circuit.id_periode = IDperiode
-
+    devis.id_devis = IDdevis
     INTO tarifDevis;
+
 END
