@@ -17,10 +17,14 @@ INSERT INTO `agencevoyage`.`circuit` (`id_periode`, `nb_places_totales`, `nb_pla
 
 
 
-
 INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`) VALUES ( '1', '1', '1', '2022-12-24');/*reste moins de 6 mois*/
 INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`) VALUES ( '2', '2', '1', '2022-01-24');/*supprimé trop vieux*/
 INSERT INTO `agencevoyage`.`devis` ( `id_circuit`, `id_client`, `nb_places_demandees`, `date_initialisation`) VALUES ( '3', '3', '2', '2022-02-23');/*supprimé trop vieux*/
+
+
+
+
+
 
 
 
