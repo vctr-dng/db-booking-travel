@@ -8,4 +8,5 @@ BEGIN
     FROM reservation) AND
     devis.date_initialisation < (NOW() - INTERVAL 6 MONTH) /* la periode de validité d'un devis est de 6 mois */
     ;
+
 END
